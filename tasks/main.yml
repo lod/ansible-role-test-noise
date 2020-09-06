@@ -1,0 +1,7 @@
+---
+- include_tasks: inside.yml
+  loop: "{{ range(0,atn_outer_count) | list }}"
+  loop_control:
+    pause: "{{ atn_delay }}"
+    index_var: atn_j
+    loop_var: atn_noise

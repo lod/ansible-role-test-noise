@@ -1,0 +1,8 @@
+---
+- debug:
+    msg: Iteration {{ atn_i+1 }} of {{ atn_inner_count }}, group {{ atn_j+1 }} of {{ atn_outer_count }}
+  loop_control:
+    pause: "{{ atn_delay }}"
+    index_var: atn_i
+    loop_var: atn_inside
+  loop: "{{ range(0,atn_inner_count) | list }}"

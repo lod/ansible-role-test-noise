@@ -1,0 +1,21 @@
+galaxy_info:
+  role_name: test_noise
+  author: David Tulloh
+  description: Noise generator for testing Ansible execution
+
+  license: license (BSD-3-Clause)
+
+  min_ansible_version: 2.9
+
+  platforms:
+    - name: all
+      versions:
+        - all
+
+  galaxy_tags:
+    - test
+    - testing
+    - local
+    - development
+
+dependencies: []
